@@ -117,63 +117,48 @@ Je veux réaliser un logiciel de gestion de projet moderne basé sur:
   <p>La vidéo montre comment passer d'un prototype no-code à un agent Python complet avec Pydantic AI et DeepSeek V3. Ce processus met en avant les bonnes pratiques pour construire des agents IA flexibles, puissants et abordables. Les prochaines étapes incluront l'ajout d'une interface front-end et le déploiement en production.</p>
 </details>
 
-
 <details>
-<summary>Résumé de la vidéo : "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"</summary>
+  <summary>Points clés : Création d'un système RAG avec Crawl4AI</summary>
 
-<p>Cette vidéo présente l'intégration de <strong>Crawl4AI</strong>, un web scraper open-source optimisé pour les LLM, avec <strong>n8n</strong> pour créer un système de scraping sans code.</p>
+  <p><strong>Présentation de Crawl4AI :</strong></p>
+  <ul>
+    <li>Un scraper web open-source conçu pour être compatible avec les LLM</li>
+    <li>Rapide, intuitif et gratuit (seul l'hébergement est payant)</li>
+    <li>Particulièrement efficace pour créer des bases de connaissances RAG</li>
+  </ul>
 
-<h3>Points clés :</h3>
-<ul>
-    <li><strong>Présentation de Crawl4AI</strong> :
-        <ul>
-            <li>Un scraper web open-source conçu pour être compatible avec les LLM</li>
-            <li>Rapide, intuitif et gratuit (seul l'hébergement est payant)</li>
-            <li>Particulièrement efficace pour créer des bases de connaissances RAG</li>
-        </ul>
-    </li>
+  <li>
+    <strong>Workflow n8n</strong> :
+    <ul>
+      <li>Récupération des URLs via sitemap.xml</li>
+      <li>Traitement des pages avec Crawl4AI</li>
+      <li>Stockage des données dans Supabase avec vectorisation</li>
+      <li>Système de file d'attente pour gérer les requêtes de scraping</li>
+    </ul>
+  </li>
 
-    <li><strong>Déploiement avec Docker</strong> :
-        <ul>
-            <li>Plusieurs options de déploiement :
-                <ul>
-                    <li>En local sur la même machine que n8n</li>
-                    <li>Sur une instance cloud dédiée (ex: DigitalOcean)</li>
-                </ul>
-            </li>
-            <li>Configuration simple avec Docker et possibilité d'ajouter une authentification</li>
-        </ul>
-    </li>
+  <li>
+    <strong>Intégration avec Supabase</strong> :
+    <ul>
+      <li>Création d'une base de données vectorielle</li>
+      <li>Utilisation du modèle d'embedding OpenAI</li>
+      <li>Stockage des métadonnées pour chaque chunk de texte</li>
+    </ul>
+  </li>
 
-    <li><strong>Workflow n8n</strong> :
-        <ul>
-            <li>Récupération des URLs via sitemap.xml</li>
-            <li>Traitement des pages avec Crawl4AI</li>
-            <li>Stockage des données dans Supabase avec vectorisation</li>
-            <li>Système de file d'attente pour gérer les requêtes de scraping</li>
-        </ul>
-    </li>
+  <li>
+    <strong>Agent IA de démonstration</strong> :
+    <ul>
+      <li>Utilisation de GPT-4 pour les requêtes</li>
+      <li>Intégration avec la base de connaissances Supabase</li>
+      <li>Capacité à répondre aux questions sur la documentation scrapée</li>
+    </ul>
+  </li>
 
-    <li><strong>Intégration avec Supabase</strong> :
-        <ul>
-            <li>Création d'une base de données vectorielle</li>
-            <li>Utilisation du modèle d'embedding OpenAI</li>
-            <li>Stockage des métadonnées pour chaque chunk de texte</li>
-        </ul>
-    </li>
-
-    <li><strong>Agent IA de démonstration</strong> :
-        <ul>
-            <li>Utilisation de GPT-4 pour les requêtes</li>
-            <li>Intégration avec la base de connaissances Supabase</li>
-            <li>Capacité à répondre aux questions sur la documentation scrapée</li>
-        </ul>
-    </li>
-</ul>
-
-<h3>Conclusion :</h3>
-<p>La vidéo démontre comment créer un système complet de scraping et de RAG sans code, en combinant n8n, Crawl4AI et Supabase. Cette approche permet de rapidement mettre en place un agent IA capable d'exploiter des données web de manière éthique et efficace.</p>
+  <p><strong>Conclusion :</strong><br>
+  La vidéo démontre comment créer un système complet de scraping et de RAG sans code, en combinant n8n, Crawl4AI et Supabase. Cette approche permet de rapidement mettre en place un agent IA capable d'exploiter des données web de manière éthique et efficace.</p>
 </details>
+
 
 # Synthèse du Cahier des Charges : Logiciel de Gestion de Projet Moderne
 
