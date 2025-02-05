@@ -7,6 +7,8 @@ Je veux réaliser un logiciel de gestion de projet moderne basé sur:
 - une base de données agentique : fais un résumé de :https://www.youtube.com/watch?v=uWDocIoiaXE
 - pydantic.ai pour la création d'agent : fais un résumé :https://www.youtube.com/watch?v=zf_D2Eafvk0&t=849s 
 - le web scraping avec : https://www.youtube.com/watch?v=c5dw_jsGNBk&t=790s (fais le résumé)
+
+L'expansion du texte ci-dessous nécessite le passage en html, la conversion markdown --> html a été faite avec un LLM  
 ```
 
 <details>
@@ -160,11 +162,9 @@ Je veux réaliser un logiciel de gestion de projet moderne basé sur:
 </details>
 
 
-# Synthèse du Cahier des Charges : Logiciel de Gestion de Projet Moderne
+# Synthèse du Cahier des Charges : Project AI assistant
 
-**Nom du Projet (Proposé)** : [Nom à définir - pourrait être basé sur l'intégration des technologies clés]
-
-**Objectif Principal** : Développer un logiciel de gestion de projet moderne, efficace et potentiellement axé sur la confidentialité, en utilisant des technologies innovantes pour la communication, l'automatisation et l'intelligence artificielle.
+**Objectif Principal** : Développer un logiciel de gestion de projet moderne, efficace en utilisant des technologies les plus récentes pour la communication, l'automatisation et l'intelligence artificielle.
 
 ## Composants Clés et Fonctionnalités Visées
 
