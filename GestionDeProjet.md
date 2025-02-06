@@ -163,53 +163,86 @@ L'expansion du texte ci-dessous nécessite le passage en html, la conversion mar
 
 
 # Synthèse du Cahier des Charges : Project AI assistant
+<details>
+  <summary>Détail</summary>
 
-**Objectif Principal** : Développer un logiciel de gestion de projet moderne, efficace en utilisant des technologies les plus récentes pour la communication, l'automatisation et l'intelligence artificielle.
+  <p>
+    <strong>Objectif Principal :</strong> Développer un logiciel de gestion de projet moderne, efficace en utilisant des technologies les plus récentes pour la communication, l'automatisation et l'intelligence artificielle.
+  </p>
 
-## Composants Clés et Fonctionnalités Visées
+  <h4>Composants Clés et Fonctionnalités Visées</h4>
 
-*   **Communication et Collaboration :**
-    *   **Télégram :** Plateforme principale pour les échanges d'équipe en temps réel.
-    *   Intégration de bots pour notifications, rappels et mises à jour automatisées.
-    *   Sécurité des échanges (chiffrement en transit, potentiellement chats secrets pour discussions sensibles).
-*   **Automatisation des Workflows :**
-    *   **n8n :** Outil no-code pour la création et la gestion de workflows automatisés.
-    *   Automatisation des tâches répétitives (rapports, statuts de projet).
-    *   Orchestration des interactions entre les différents composants du logiciel.
-*   **Base de Données Agentique et Raisonnement IA :**
-    *   **DeepSeek R1 (via base de données vectorielle - ChromaDB/Supabase) :** Moteur de raisonnement pour la gestion de la connaissance et l'analyse de projet.
-    *   Extraction d'insights détaillés à partir de la base de connaissances du projet.
-    *   Gestion des requêtes complexes et raisonnement avancé (dépendances, solutions de problèmes).
-*   **Agents IA et Outils :**
-    *   **Pydantic AI :** Framework Python pour la création d'agents IA personnalisés.
-    *   Agents capables d'interagir avec les autres composants (base de données, workflows n8n, Télégram).
-    *   Flexibilité pour intégrer des outils spécifiques (API, scraping web).
-*   **Acquisition de Données et Enrichissement de la Base de Connaissances :**
-    *   **Crawl4AI (intégré à n8n) :** Web scraper pour collecter des données externes pertinentes.
-    *   Collecte automatisée d'informations (concurrents, tendances).
-    *   Intégration des données scrapées dans la base de données vectorielle.
+  <p>
+    <strong>Communication et Collaboration :</strong>
+  </p>
+  <ul>
+    <li><strong>Télégram</strong> : Plateforme principale pour les échanges d'équipe en temps réel.</li>
+    <li>Intégration de bots pour notifications, rappels et mises à jour automatisées.</li>
+    <li>Sécurité des échanges (chiffrement en transit, potentiellement chats secrets pour discussions sensibles).</li>
+  </ul>
 
-## Déploiement Envisagé
+  <p>
+    <strong>Automatisation des Workflows :</strong>
+  </p>
+  <ul>
+    <li><strong>n8n</strong> : Outil no-code pour la création et la gestion de workflows automatisés.</li>
+    <li>Automatisation des tâches répétitives (rapports, statuts de projet).</li>
+    <li>Orchestration des interactions entre les différents composants du logiciel.</li>
+  </ul>
 
-*   **Serveur Local :** Priorité à la confidentialité et au contrôle des données.
-    *   Nécessite une configuration et une maintenance locale.
-    *   Considérations sur la sécurité de Télégram et potentiellement chiffrement supplémentaire pour les données sensibles.
+  <p>
+    <strong>Base de Données Agentique et Raisonnement IA :</strong>
+  </p>
+  <ul>
+    <li><strong>DeepSeek R1</strong> (via base de données vectorielle - ChromaDB/Supabase) : Moteur de raisonnement pour la gestion de la connaissance et l'analyse de projet.</li>
+    <li>Extraction d'insights détaillés à partir de la base de connaissances du projet.</li>
+    <li>Gestion des requêtes complexes et raisonnement avancé (dépendances, solutions de problèmes).</li>
+  </ul>
 
-## Points Forts Identifiés
+  <p>
+    <strong>Agents IA et Outils :</strong>
+  </p>
+  <ul>
+    <li><strong>Pydantic AI</strong> : Framework Python pour la création d'agents IA personnalisés.</li>
+    <li>Agents capables d'interagir avec les autres composants (base de données, workflows n8n, Télégram).</li>
+    <li>Flexibilité pour intégrer des outils spécifiques (API, scraping web).</li>
+  </ul>
 
-*   **Innovation Technologique :** Utilisation de technologies de pointe (LLMs, automatisation no-code, agents IA).
-*   **Potentiel d'Automatisation Élevé :** n8n et agents IA pour optimiser les processus de gestion de projet.
-*   **Base de Connaissances Intelligente :** DeepSeek R1 pour une analyse et un raisonnement avancés sur les données du projet.
-*   **Flexibilité et Extensibilité :** Architecture modulaire et utilisation de frameworks adaptables (Pydantic AI, n8n).
-*   **Confidentialité (Déploiement Local) :** Réponse à une préoccupation croissante pour la sécurité des données.
+  <p>
+    <strong>Acquisition de Données et Enrichissement de la Base de Connaissances :</strong>
+  </p>
+  <ul>
+    <li><strong>Crawl4AI</strong> (intégré à n8n) : Web scraper pour collecter des données externes pertinentes.</li>
+    <li>Collecte automatisée d'informations (concurrents, tendances).</li>
+    <li>Intégration des données scrapées dans la base de données vectorielle.</li>
+  </ul>
 
-## Points d'Attention / Défis Potentiels
+  <h4>Déploiement Envisagé</h4>
+  <ul>
+    <li><strong>Serveur Local</strong> : Priorité à la confidentialité et au contrôle des données.</li>
+    <li>Nécessite une configuration et une maintenance locale.</li>
+    <li>Considérations sur la sécurité de Télégram et potentiellement chiffrement supplémentaire pour les données sensibles.</li>
+  </ul>
 
-*   **Complexité de l'Intégration :** Assurer une communication fluide et efficace entre tous les composants.
-*   **Performance des LLMs en Local :** Optimisation nécessaire pour garantir une expérience utilisateur réactive.
-*   **Sécurité de Télégram pour Données Sensibles :** Mise en place de mesures de sécurité complémentaires si nécessaire.
-*   **Développement et Maintenance :** Compétences techniques requises pour le développement, le déploiement et la maintenance du système.
-*   **Expérience Utilisateur :** Conception d'une interface utilisateur intuitive et facile à utiliser malgré la complexité sous-jacente.
+  <h4>Points Forts Identifiés</h4>
+  <ul>
+    <li><strong>Innovation Technologique</strong> : Utilisation de technologies de pointe (LLMs, automatisation no-code, agents IA).</li>
+    <li><strong>Potentiel d'Automatisation Élevé</strong> : n8n et agents IA pour optimiser les processus de gestion de projet.</li>
+    <li><strong>Base de Connaissances Intelligente</strong> : DeepSeek R1 pour une analyse et un raisonnement avancés sur les données du projet.</li>
+    <li><strong>Flexibilité et Extensibilité</strong> : Architecture modulaire et utilisation de frameworks adaptables (Pydantic AI, n8n).</li>
+    <li><strong>Confidentialité (Déploiement Local)</strong> : Réponse à une préoccupation croissante pour la sécurité des données.</li>
+  </ul>
+
+  <h4>Points d'Attention / Défis Potentiels</h4>
+  <ul>
+    <li><strong>Complexité de l'Intégration</strong> : Assurer une communication fluide et efficace entre tous les composants.</li>
+    <li><strong>Performance des LLMs en Local</strong> : Optimisation nécessaire pour garantir une expérience utilisateur réactive.</li>
+    <li><strong>Sécurité de Télégram pour Données Sensibles</strong> : Mise en place de mesures de sécurité complémentaires si nécessaire.</li>
+    <li><strong>Développement et Maintenance</strong> : Compétences techniques requises pour le développement, le déploiement et la maintenance du système.</li>
+    <li><strong>Expérience Utilisateur</strong> : Conception d'une interface utilisateur intuitive et facile à utiliser malgré la complexité sous-jacente.</li>
+  </ul>
+
+</details>
 
 # Assistant traducteur Speech to text
 
