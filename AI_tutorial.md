@@ -13,4 +13,4 @@ débutant (le faire sans le RAG , l'implantation suit). L'interface a été mis 
 ```
 FROM qwen2.5:7b-instruct-q4_K_M
 PARAMETER num_ctx 8096
-``
+```
