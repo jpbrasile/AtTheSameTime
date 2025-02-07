@@ -4,4 +4,5 @@ Abonnement 25 €/mois (permet plusieurs pipelines et intégration Knowledge Bas
 débutant (le faire sans le RAG , l'implantation suit). L'interface a été mis à jour le 3 février 2025
 ## [RAG agent avec VectorShift](https://www.youtube.com/watch?v=ieLdMih5_V0) ✅
 ## [Parler à son agent de sa base de connaissance](https://www.youtube.com/watch?v=7sgibmj_MBY)  ✅
+## [Argentic agent avec R1](https://www.youtube.com/watch?v=uWDocIoiaXE&t=254s)
 
