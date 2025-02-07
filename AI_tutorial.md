@@ -14,3 +14,8 @@ débutant (le faire sans le RAG , l'implantation suit). L'interface a été mis 
 FROM qwen2.5:7b-instruct-q4_K_M
 PARAMETER num_ctx 8096
 ```
+## [Pour "scraper" un site internet](https://www.youtube.com/watch?v=c5dw_jsGNBk&t=795s)
+
+- L'objectif est d'utiliser Crawl4AI, un scraper rapideet facile d'emploi et l'insérer dans un workflow n8n. 
+- Crawl4AI est à la base une  bibliothèque python. Pour l'adapter à n8n nous allons la faire "tourner" dans un container docker, deployée sur DigitalOcean pour y avoir accès par API.
+- DigitalOcean permet de configurer des machines virtuelles, elles peuvent être mise en sommeil avec les [snapshots](https://docs.digitalocean.com/products/snapshots/getting-started/quickstart/) 
