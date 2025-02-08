@@ -20,7 +20,7 @@ PARAMETER num_ctx 8096
 - Crawl4AI est à la base une  bibliothèque python. Pour l'adapter à n8n nous allons la faire "tourner" dans un container docker, deployée sur DigitalOcean pour y avoir accès par API.
 - DigitalOcean permet de configurer des machines virtuelles, elles peuvent être mise en sommeil avec les [snapshots](https://docs.digitalocean.com/products/snapshots/getting-started/quickstart/)
 
-## [Deep research](https://www.youtube.com/watch?v=cUsSAxwEs8Y&t=117s)
+## [Deep research](https://www.youtube.com/watch?v=cUsSAxwEs8Y&t=117s) ✅ (installé sur Docker) 
 - OpenAI propose pour 200$/mois, 100 requêtes de recherche web. On peut faire l'équivalent avec browser-use/web ui
 - Une [installation en local](https://github.com/browser-use/web-ui), sous Docker ou non est possible. La video suggère d'utiliser l'API sambanova avec une variante distillée de R1:
 
