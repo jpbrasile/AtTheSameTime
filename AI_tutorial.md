@@ -29,3 +29,5 @@ PARAMETER num_ctx 8096
 "Model Name"  --> "DeepSeek-R1-Distill-Llama-70B"
 "Base URL" --> "https://api.sambanova.ai/v1"
 ```
+- Avec l'API de Google et gemini2.0 flash thinking on obtient milk_pasteurization.md avec une requête sur l'état de l'art de l'utilisation des plasmas froids pour le traitement du lait. 
+- Nous avons réalisé un [teaser](https://jpbrasile-milk_cap_pasteurization.web.val.run) avec Townie (Val Town). Le point dur a été de lui faire maîtriser la durée de la voix, une astuce a alors été de lui demander 5 options possibles pour qu'il arrête de tourner en rond sans répondre au besoin de synchronisation (MediaRecorder a été choisi)
