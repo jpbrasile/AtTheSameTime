@@ -1,3 +1,12 @@
+# Un bon assistant, c'est quoi ?
+- Il vous aide à bien formuler vos questions
+- Il cherche les réponses
+  - après y avoir réfléchi
+  - en faisant des recherches approfondies sur le web
+  - en n'hésitant pas à utiliser des outils pour mieux y répondre, ainsi il est parfois plus facile de créer et d'exécuter un code pour y répondre
+  - il organise les données recueillies en un ensemble cohérent (graphe sémantique)
+  - il "digère" le savoir nécessaire à assurer son expertise 
+
 # VectorShift: 
 Abonnement 25 €/mois (permet plusieurs pipelines et intégration Knowledge Base) :abonnement pris le 6/2/2025
 ## Création d'agents avec [VectorShift](https://www.youtube.com/watch?v=7sgibmj_MBY) : ✅
