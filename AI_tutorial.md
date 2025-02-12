@@ -44,7 +44,7 @@ ollama create qwen2.5-128k -f Modelfile
 - Nous avons réalisé un [teaser](https://jpbrasile-milk_cap_pasteurization.web.val.run) avec Townie (Val Town). Le point dur a été de lui faire maîtriser la durée de la voix, une astuce a alors été de lui demander 5 options possibles pour qu'il arrête de tourner en rond sans répondre au besoin de synchronisation (MediaRecorder a été choisi)
 
 ### Une [alternative avec firecrawl](https://github.com/dzhng/deep-research) ✅ (installée avec npm) 
-### Autres alternative Storm (standford) et Google Deep search 
+### Autres alternative Storm (standford) , Google Deep search and chatllm en mode web search associé à un modèle qui raisonne.
 ```
 "LLM Provider" --> "openai"
 "Model Name"  --> "DeepSeek-R1-Distill-Llama-70B"
