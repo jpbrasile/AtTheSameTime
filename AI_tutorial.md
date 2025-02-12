@@ -37,6 +37,10 @@ ollama create qwen2.5-128k -f Modelfile
 - OpenAI propose pour 200$/mois, 100 requêtes de recherche web. On peut faire l'équivalent avec browser-use/web ui
 - Une [installation en local](https://github.com/browser-use/web-ui), sous Docker ou non est possible. La video suggère d'utiliser l'API sambanova avec une variante distillée de R1:
 
+
+- Avec l'API de Google et gemini2.0 flash thinking on obtient [milk_pasteurization.md](https://github.com/jpbrasile/AtTheSameTime/blob/main/milk_pasteurization.md) avec une requête sur l'état de l'art de l'utilisation des plasmas froids pour le traitement du lait. 
+- Nous avons réalisé un [teaser](https://jpbrasile-milk_cap_pasteurization.web.val.run) avec Townie (Val Town). Le point dur a été de lui faire maîtriser la durée de la voix, une astuce a alors été de lui demander 5 options possibles pour qu'il arrête de tourner en rond sans répondre au besoin de synchronisation (MediaRecorder a été choisi)
+
 ### Une [alternative avec firecrawl](https://github.com/dzhng/deep-research) ✅ (installée avec npm) 
 ### Autres alternative Storm (standford) et Google Deep search 
 ```
@@ -44,5 +48,3 @@ ollama create qwen2.5-128k -f Modelfile
 "Model Name"  --> "DeepSeek-R1-Distill-Llama-70B"
 "Base URL" --> "https://api.sambanova.ai/v1"
 ```
-- Avec l'API de Google et gemini2.0 flash thinking on obtient [milk_pasteurization.md](https://github.com/jpbrasile/AtTheSameTime/blob/main/milk_pasteurization.md) avec une requête sur l'état de l'art de l'utilisation des plasmas froids pour le traitement du lait. 
-- Nous avons réalisé un [teaser](https://jpbrasile-milk_cap_pasteurization.web.val.run) avec Townie (Val Town). Le point dur a été de lui faire maîtriser la durée de la voix, une astuce a alors été de lui demander 5 options possibles pour qu'il arrête de tourner en rond sans répondre au besoin de synchronisation (MediaRecorder a été choisi)
