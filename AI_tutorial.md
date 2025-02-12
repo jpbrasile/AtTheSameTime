@@ -18,14 +18,18 @@ débutant (le faire sans le RAG , l'implantation suit). L'interface a été mis 
 
 - [Ici](https://github.com/coleam00/ottomator-agents/tree/main/r1-distill-rag) pour la mise en oeuvre
 -  Nous disposons de deux llm , l'un qui réfléchit et fait les requ^tes RAG, le cas échéant modifiant la requête si le résultat est insuffisant, l'autre mettant en forme la réponse à la question.
-- L'intérêt d'utiliser Ollama est que l'on peut adapter la taille du contexte du llm en deux lignes de code
+- L'intérêt d'utiliser Ollama est que l'on peut adapter la taille du contexte du llm en deux lignes de code que 'on met dans Modelfile
 ```
 FROM qwen2.5:7b-instruct-q4_K_M
 PARAMETER num_ctx 8096
 ```
+puis 
+```
+ollama create qwen2.5-128k -f Modelfile
+```
 ## [Pour "scraper" un site internet](https://www.youtube.com/watch?v=c5dw_jsGNBk&t=795s)
 
-- L'objectif est d'utiliser Crawl4AI, un scraper rapideet facile d'emploi et l'insérer dans un workflow n8n. 
+- L'objectif est d'utiliser Crawl4AI, un scraper rapide et facile d'emploi et l'insérer dans un workflow n8n. 
 - Crawl4AI est à la base une  bibliothèque python. Pour l'adapter à n8n nous allons la faire "tourner" dans un container docker, deployée sur DigitalOcean pour y avoir accès par API.
 - DigitalOcean permet de configurer des machines virtuelles, elles peuvent être mise en sommeil avec les [snapshots](https://docs.digitalocean.com/products/snapshots/getting-started/quickstart/)
 
@@ -33,6 +37,8 @@ PARAMETER num_ctx 8096
 - OpenAI propose pour 200$/mois, 100 requêtes de recherche web. On peut faire l'équivalent avec browser-use/web ui
 - Une [installation en local](https://github.com/browser-use/web-ui), sous Docker ou non est possible. La video suggère d'utiliser l'API sambanova avec une variante distillée de R1:
 
+### Une [alternative avec firecrawl](https://github.com/dzhng/deep-research) ✅ (installée avec npm) 
+### Autres alternative Storm (standford) et Google Deep search 
 ```
 "LLM Provider" --> "openai"
 "Model Name"  --> "DeepSeek-R1-Distill-Llama-70B"
