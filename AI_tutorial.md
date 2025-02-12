@@ -5,7 +5,9 @@
   - en faisant des recherches approfondies sur le web
   - en n'hésitant pas à utiliser des outils pour mieux y répondre, ainsi il est parfois plus facile de créer et d'exécuter un code pour y répondre
   - il organise les données recueillies en un ensemble cohérent (graphe sémantique)
-  - il "digère" le savoir nécessaire à assurer son expertise 
+  - il "digère" le savoir nécessaire à assurer son expertise
+ 
+Voir cette [publication](https://www.researchgate.net/publication/388847740_Agentic_Reasoning_Reasoning_LLMs_with_Tools_for_the_Deep_Research) d'Oxford qui montre l'intérêt d'intégrer à la fois, le raisonnement à des outils (recherche web, codage) pour obtenir de meilleurs résultats. Le code n'est pas encore publié.   
 
 # VectorShift: 
 Abonnement 25 €/mois (permet plusieurs pipelines et intégration Knowledge Base) :abonnement pris le 6/2/2025
