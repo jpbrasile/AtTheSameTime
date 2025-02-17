@@ -63,4 +63,6 @@ ollama create qwen2.5-128k -f Modelfile
 ```docker run -p 3000:5001 -v ${PWD}/crm.db:/app/crm.db crm-lite```
 - Portage sur Netify
   - création des fichiers statiques: ```npm run build ``` --> dist
-  - mise e nplace du choix de la base de donnée : sqlite ou supabase suivant la variable d'environnement dans .env
+  - mise en place du choix de la base de donnée : sqlite ou supabase suivant la variable d'environnement dans .env
+  - set the DATABASE_URL sous la forme ```DATABASE_URL in the following format:
+postgresql://<username>:<password>@<host>:<port>/<database_name>``` soit pour nous ```postgresql://postgres:leads27....4@db.wgnuh...rxrvg.supabase.co:5432/postgres```
