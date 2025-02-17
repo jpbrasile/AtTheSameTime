@@ -50,3 +50,17 @@ ollama create qwen2.5-128k -f Modelfile
 "Model Name"  --> "DeepSeek-R1-Distill-Llama-70B"
 "Base URL" --> "https://api.sambanova.ai/v1"
 ```
+## Gestionnaire de tâches
+- Nous avons réalisé une maquette avec townie: https://jpbrasile-leads_manager1.web.val.run/
+- Nous avons utilisé roo code avec vs studio pour en faire de même en utilisant le code townie comme base:
+  ```
+   npm run dev:all
+  ```
+  permet de lancer l'application sur le port 3001 :http://localhost:3001/
+ - Nous avons aussi porté l'application sur docker en local   :
+  ``` docker build -t crm-lite . ``` 
+  - Lancement du conteneur Docker
+```docker run -p 3000:5001 -v ${PWD}/crm.db:/app/crm.db crm-lite```
+- Portage sur Netify
+  - création des fichiers statiques: ```npm run build ``` --> dist
+  - mise e nplace du choix de la base de donnée : sqlite ou supabase suivant la variable d'environnement dans .env
