@@ -66,3 +66,11 @@ ollama create qwen2.5-128k -f Modelfile
   - mise en place du choix de la base de donnée : sqlite ou supabase suivant la variable d'environnement dans .env
   - set the DATABASE_URL sous la forme ```DATABASE_URL in the following format:
 postgresql://<username>:<password>@<host>:<port>/<database_name>``` soit pour nous ```postgresql://postgres:leads27....4@db.wgnuh...rxrvg.supabase.co:5432/postgres```
+
+## Update d'un repository avec git
+```
+git stash # To save local changes (if any)
+git pull origin main # To get the latest updates from GitHub
+pnpm install # To update dependencies if the updates included changes to package.json
+git stash pop # To re-apply your saved local changes (if any)
+```
